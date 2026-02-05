@@ -4,47 +4,86 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoSwiperyt from '@/images/logos/logoSwiperyt.png'
-import logoGofree from '@/images/logos/logoGofree.svg'
-import logoWalletChat from '@/images/logos/walletchat-logo.png'
+import logoFilevert from '@/images/logos/logoFilvert.png'
+import logoTicTac from '@/images/logos/logoTicTac.jpg'
 import logoFundme from '@/images/logos/fundme-logo.png'
-import logoGofreeBiz from '@/images/logos/logoGofreeBiz.png'
+import logoNeura from '@/images/logos/logoNeura.png'
+import logoRants from '@/images/logos/logoRants.ico'
+import logoReedeck from '@/images/logos/logoReedeck.png'
+import logoGitRaven from '@/images/logos/logoGitRaven.png'
+import logoGuestGuidePDF from '@/images/logos/logoGuestGuide.png'
+import logoQauntro from '@/images/logos/logoQuantro.png'
 
 export const projects = [
   {
-    name: 'WalletChat',
+    name: 'Reedeck - Unified Customer Support with AI',
     description:
-      'The NFT social layer 💬',
-    link: { href: 'https://walletchat.fun', label: 'walletchat.fun' },
-    logo: logoWalletChat,
-  },
-  {
-    name: 'GoFree - #1 Social Neo Bank',
-    description:
-      'Social Neobank for Digital Natives - Chat, Payments, Virtual Cards & more for instant borderless payments in real-time.',
+      'Manage and respond to all your customer messages from Slack, Teams, email, and more all-in-one omni-channel platform.',
     link: {
-      href: 'https://download.joingofree.com',
-      label: 'download.joingofree.com',
+      href: 'https://reedeck.com',
+      label: 'reedeck.com',
     },
-    logo: logoGofree,
+    logo: logoReedeck,
   },
-  {
-    name: 'GoFree Business - #1 Banking for Startups',
+  { 
+    name: 'Rants - Anonymous voice threads. Start a topic, let the world speak',
     description:
-      'Social Banking for Startups and SME businesses accross the globe.',
+      'Speack your truth without revealing your identity. Join anonymous voice threads on topics that matter to you and hear diverse perspectives from around the world.',
     link: {
-      href: 'https://joingofree.com',
-      label: 'joingofree.com',
+      href: 'https://rants.link',
+      label: 'rants.link',
     },
-    logo: logoGofreeBiz,
+    logo: logoRants,
   },
-  {
-    name: 'FundMe - #1 Rapyd Hackathon Winner',
+  { 
+    name: 'Neura Finance - Send USDC across chains',
     description:
-      'This is the GoFundMe for Africa. It helps users recieve donations and perform transactions seamlessly.',
-    link: { href: 'https://help-fd14d.web.app/', label: 'fundme.com.ng' },
-    logo: logoFundme,
+      'Transfer USDC across multiple blockchains natively with Circle’s Cross-Chain Transfer Protocol',
+    link: {
+      href: 'https://finance.getneuratalent.com',
+      label: 'finance.getneuratalent.com',
+    },
+    logo: logoNeura,
   },
   {
+    name: 'GitRaven - AI-Powered Code Review Assistant',
+    description:
+      'With over 500 weekly downloads - AI-powered code review assistant for developers.',
+    link: {
+      href: 'https://www.npmjs.com/package/gitraven',
+      label: 'npmjs.com/package/gitraven',
+    },
+    logo: logoGitRaven,
+  },
+  {
+    name: 'NeuraTalent - AI copilot for recuriters',
+    description:
+      'Transform your hiring process with our AI-driven interviews. Cut down on time and costs while finding top talent faster.',
+    link: {
+      href: 'https://getneuratalent.com',
+      label: 'getneuratalent.com',
+    },
+    logo: logoNeura,
+  },
+  {
+    name: 'GuestGuidePDF - Create Professional Guest Guidebooks',
+    description:
+      'Create professional guest guidebooks in three simple steps. No design skills required.',
+    link: {
+      href: 'https://www.guestguidepdf.com',
+      label: 'guestguidepdf.com',
+    },
+    logo: logoGuestGuidePDF,
+  },
+  {
+    name: 'Qauntro - Chat to manage your business',
+    description:
+      'Stop wrestling with complex dashboards. Just chat with Quantro to create invoices, log expenses, and analyze your business health.',
+    link: { href: 'https://tryquantro.com', label: 'tryquantro.com' },
+    logo: logoQauntro,
+  },
+  {
+
     name: 'Swiperyt',
     description: 'The Tinder for Africa with over 500+ downloads',
     link: {
@@ -52,6 +91,31 @@ export const projects = [
       label: 'swiperyt.app',
     },
     logo: logoSwiperyt,
+  },
+  
+  {
+    name: 'Filevert',
+    description:
+      'FileVert is an eco-designed and sober platform, with an eco-responsible approach. Its objective is to allow everyone to transfer files using the least amount of resources while becoming aware of the impact of its digital uses.',
+    link: { href: 'https://filevert.fr', label: 'filevert.fr' },
+    logo: logoFilevert,
+  },
+  {
+    name: 'FundMe - #1 Rapyd Hackathon Winner',
+    description:
+      'This is the GoFundMe for Africa. It helps users recieve donations and perform transactions seamlessly.',
+    link: { href: 'https://help-fd14d.web.app/', label: 'fundme.com.ng' },
+    logo: logoFundme,
+  }, 
+  {
+    name: 'TicTac Game',
+    description:
+      'Play Tic-Tac-Toe in solo and multi-player with an interactive user experience.',
+    link: {
+      href: 'https://play.google.com/store/apps/details?id=tm.tictactoe',
+      label: 'tictactoe.app',
+    },
+    logo: logoTicTac,
   },
 ]
 
@@ -70,15 +134,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Products - Izuchukwu</title>
+        <title>Projects - Nnaemeka</title>
         <meta
           name="description"
-          content="Have a look at some products I've contributed to."
+          content="Have a look at some of my top projects."
         />
       </Head>
       <SimpleLayout
-        title="Have a look at some products I've contributed to."
-        intro="The products that are listed below are currently in production. These products are used by a wide range of users accross the globe."
+        title="Have a look at some of my top projects."
+        intro="The projects that are listed below are currently in production. These projects are used by a wide range of users accross the globe. Building projects is always the best way to improve your skills."
       >
         <ul
           role="list"

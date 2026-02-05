@@ -10,7 +10,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/mee.jpg'
+import portraitImage from '@/images/mee.jpeg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -76,11 +76,6 @@ export default function About() {
                 and a level of trust amongst each other.
               </p>
               <p>
-                Today, I’m a founding Engineer at GoFree, where we’re working on
-                building a financial warehouse with serveral features at your
-                disposal.
-              </p>
-              <p>
                 Let's connect on social media and thanks for stopping by. 🤝
               </p>
             </div>
@@ -88,13 +83,13 @@ export default function About() {
           <div className="lg:pl-20">
             <ul role="list">
               <SocialLink
-                href="https://x.com/CodeWithEric"
+                href="https://x.com/eric_rtw"
                 icon={TwitterIcon}
               >
                 Follow on Twitter
               </SocialLink>
               <SocialLink
-                href="https://instagram.com/codewitheric"
+                href="https://instagram.com/ericdoteth"
                 icon={InstagramIcon}
                 className="mt-4"
               >
@@ -115,7 +110,7 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:onukwubeizu@gmail.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >

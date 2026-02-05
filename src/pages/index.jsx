@@ -19,9 +19,9 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import logoGofree from '@/images/logos/logoGofree.svg'
 import logoWalletChat from '@/images/logos/walletchat-logo.png'
-import logoHubswitch from '@/images/logos/hubswitch-logo.jpeg'
+import logoZipBoard from '@/images/logos/zipboard-logo.png'
 import logoVicillion from '@/images/logos/vicillion-logo.jpeg'
-import logoZayxon from '@/images/logos/logoZayxon.png'
+import logoGoodDollar from '@/images/logos/gooddollar-logo.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -140,33 +140,43 @@ function Newsletter() {
 
 function Resume() {
   let resume = [
+      {
+      company: 'ZipBoard',
+      title: 'Full-Stack Engineer',
+      logo: logoZipBoard,
+      start: '2025',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
+    {
+      company: 'GoodDollar',
+      title: 'Mobile Engineer',
+      logo: logoGoodDollar,
+      start: '2023',
+      end: {
+        label: '2024',
+        dateTime: new Date().getFullYear(),
+      },
+    },
     {
       company: 'WalletChat',
-      title: 'Software Engineer',
+      title: 'Sr. Software Engineer',
       logo: logoWalletChat,
       start: '2023',
       end: {
-        label: 'Present',
+        label: '2024',
         dateTime: new Date().getFullYear(),
       },
     },
     {
       company: 'GoFree',
-      title: 'Software Engineer',
+      title: 'Sr. Software Engineer',
       logo: logoGofree,
       start: '2022',
       end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
-    {
-      company: 'Hubswitch Africa',
-      title: 'Developer Relations Engineer',
-      logo: logoHubswitch,
-      start: '2022',
-      end: {
-        label: 'Present',
+        label: '2025',
         dateTime: new Date().getFullYear(),
       },
     },
@@ -174,15 +184,8 @@ function Resume() {
       company: 'Vicillion',
       title: 'Software Engineer, Contract',
       logo: logoVicillion,
-      start: '2021',
-      end: '2022',
-    },
-    {
-      company: 'Zayxon',
-      title: 'Founding Engineer',
-      logo: logoZayxon,
-      start: '2019',
-      end: '2020',
+      start: '2020',
+      end: '2021',
     },
   ]
 
@@ -190,7 +193,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work Experience</span>
+        <span className="ml-3">Work</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -232,7 +235,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://drive.google.com/file/d/1mC-5wyueRoSNdu85T_QQ-B5QozoaKJ1K/view?usp=sharing"
+        href="https://docs.google.com/document/d/1287NuYTlrjWPa9L-Zygv9O5U05lHEuESjT4IFFSjULM/edit?usp=sharing"
         variant="secondary"
         className="group mt-6 w-full"
       >
@@ -275,7 +278,7 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Izuchukwu Onukwube - Software Engineer, founder, and Entrepreneur
+          Izuchukwu Onukwube - Software Engineer, and Entrepreneur
         </title>
         <meta
           name="description"
@@ -288,24 +291,23 @@ export default function Home({ articles }) {
             Software Engineer, and Entrepreneur
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m a Software Engineer based in Lagos, Nigeria. I build Mobile
-            and Web applications using a wide range of technologies like
-            Typescript, React Native, Nodejs and Nextjs. I make use of Vercel, AWS and GCP
-            to manage cloud based architecture on multiple projects, 
-            with interest in building products in Fintech, Web3, AI & SaaS industries. 
-            Basically, I am someone who takes pride in delivering each task to a high
+            I’m a Software Engineer based in Lagos, Nigeria. I build Mobile apps
+            and web applications using a wide range of technologies like
+            Typescript, React Native, Nodejs and Nextjs. I also use AWS and GCP
+            to manage cloud based architecture on multiple projects. Basically,
+            I am someone who takes pride in delivering each task to a high
             standard and I achieve this by working closely with other people
             within the team to build good communication skills and a level of
             trust amongst each other.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://x.com/CodeWithEric"
+              href="https://x.com/eric_rtw"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com/codewitheric"
+              href="https://instagram.com/ericdoteth"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
