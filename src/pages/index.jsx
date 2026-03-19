@@ -142,7 +142,7 @@ function Resume() {
   let resume = [
       {
       company: 'ZipBoard',
-      title: 'Full-Stack Engineer',
+      title: 'Sr. Full-Stack Engineer',
       logo: logoZipBoard,
       start: '2025',
       end: {
@@ -152,7 +152,7 @@ function Resume() {
     },
     {
       company: 'GoodDollar',
-      title: 'Mobile Engineer',
+      title: 'Sr. Mobile Engineer',
       logo: logoGoodDollar,
       start: '2023',
       end: {

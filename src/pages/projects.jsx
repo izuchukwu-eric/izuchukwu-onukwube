@@ -13,8 +13,19 @@ import logoReedeck from '@/images/logos/logoReedeck.png'
 import logoGitRaven from '@/images/logos/logoGitRaven.png'
 import logoGuestGuidePDF from '@/images/logos/logoGuestGuide.png'
 import logoQauntro from '@/images/logos/logoQuantro.png'
+import logoHostrexa from '@/images/logos/hostrexa.png'
 
 export const projects = [
+  {
+    name: 'Hostrexa - Automated AI Guest Messaging for STR Managers',
+    description:
+      'Hostrexa integrates with your PMS to draft context-aware guest replies using your property guides. You review and send—saving hours every week.',
+    link: {
+      href: 'https://hostrexa.com',
+      label: 'hostrexa.com',
+    },
+    logo: logoHostrexa,
+  },
   {
     name: 'Reedeck - Unified Customer Support with AI',
     description:
@@ -134,7 +145,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Nnaemeka</title>
+        <title>Projects - Izuchukwu</title>
         <meta
           name="description"
           content="Have a look at some of my top projects."
