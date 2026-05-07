@@ -14,8 +14,19 @@ import logoGitRaven from '@/images/logos/logoGitRaven.png'
 import logoGuestGuidePDF from '@/images/logos/logoGuestGuide.png'
 import logoQauntro from '@/images/logos/logoQuantro.png'
 import logoHostrexa from '@/images/logos/hostrexa.png'
+import logoAttribute from '@/images/logos/attribute-logo.png'
 
 export const projects = [
+   {
+    name: 'Attribute - Mobile attribution built for Africa.',
+    description:
+      'Attribute gives African apps the tools to measure where users come from, track campaign performance, and connect marketing spend to revenue. Billed in Naira, with support in your timezone.',
+    link: {
+      href: 'https://attributehq.com',
+      label: 'attributehq.com',
+    },
+    logo: logoAttribute,
+  },
   {
     name: 'Hostrexa - Automated AI Guest Messaging for STR Managers',
     description:
@@ -39,7 +50,7 @@ export const projects = [
   { 
     name: 'Rants - Anonymous voice threads. Start a topic, let the world speak',
     description:
-      'Speack your truth without revealing your identity. Join anonymous voice threads on topics that matter to you and hear diverse perspectives from around the world.',
+      'Speak your truth without revealing your identity. Join anonymous voice threads on topics that matter to you and hear diverse perspectives from around the world.',
     link: {
       href: 'https://rants.link',
       label: 'rants.link',
@@ -67,7 +78,7 @@ export const projects = [
     logo: logoGitRaven,
   },
   {
-    name: 'NeuraTalent - AI copilot for recuriters',
+    name: 'NeuraTalent - AI copilot for recruiters',
     description:
       'Transform your hiring process with our AI-driven interviews. Cut down on time and costs while finding top talent faster.',
     link: {
@@ -87,7 +98,7 @@ export const projects = [
     logo: logoGuestGuidePDF,
   },
   {
-    name: 'Qauntro - Chat to manage your business',
+    name: 'Quantro - Chat to manage your business',
     description:
       'Stop wrestling with complex dashboards. Just chat with Quantro to create invoices, log expenses, and analyze your business health.',
     link: { href: 'https://tryquantro.com', label: 'tryquantro.com' },
@@ -153,7 +164,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Have a look at some of my top projects."
-        intro="The projects that are listed below are currently in production. These projects are used by a wide range of users accross the globe. Building projects is always the best way to improve your skills."
+        intro="The projects that are listed below are currently in production. These projects are used by a wide range of users across the globe. Building projects is always the best way to improve your skills."
       >
         <ul
           role="list"
